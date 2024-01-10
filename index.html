@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span class="green">
+                <img src="./images/logo_yash.jpeg" alt="profile">
+            </span>
+            <h1><a href="/">My Portfolio</a></h1>
+        </div>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu" id="menu-toggle">
+            <li><a href="#">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#footer">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-icon');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+    <div class="prof-container" style="background: #282537;
+ background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%)" id="home">
+        <div class="prof-texts">
+            <h4>Hello Everyone!</h4>
+            <span class="green">I am</span>
+            <h1 class="green">Yash Harad</h1>
+            <h3>Full Stack Web Developer</h3>
+            <a href="https://drive.google.com/file/d/1xJnq8GLoy0euqaae5nDpr9owYx_PqQQS/view?usp=sharing" target="_blank"
+                rel="noreferrer">
+                Checkout My Resume
+            </a>
+            <br>
+            <p>
+                Adaptable Full-stack Stack Developer with lengthy web development experience. Fluent in development
+                languages, database building, and cache mechanisms. Expertly manages end-to-end life cycles of software
+                systems, running routine tests and installing necessary upgrades.
+            </p>
+            <button><a href="#footer">Let's Talk</a></button>
+            <div class="prof-social">
+                <p>Check me out on</p>
+                <br>
+                <div class="social-icons">
+                    <span><a href="https://www.linkedin.com/in/yash-harad-a60812227/" target="_blank"
+                            rel="noreferrer"><i style="font-size:24px" class="fa">&#xf08c;</i></a></span>
+                    <span><a href="https://github.com/Yasshharad" target="_blank" rel="noreferrer"><i
+                                style="font-size:24px" class="fa">&#xf09b;</i></a></span>
+                    <span><a href="https://www.hackerrank.com/haradyash0244?hr_r=1" target="_blank"
+                            rel="noreferrer">HR</a></span>
+                    <span><a href="https://leetcode.com/Yash_Harad/" target="_blank" rel="noreferrer">LC</a></span>
+                    <span><a href="https://www.instagram.com/_yash_harad_/" target="_blank" rel="noreferrer"><i
+                                style="font-size:24px" class="fa">&#xf16d;</i></a></span>
+                    <span><a href="https://www.facebook.com/yash.harad.0836/" target="_blank" rel="noreferrer"><i
+                                style="font-size:24px" class="fa">&#xf09a;</i></a></span>
+                    <span><a href="/" target="_blank" rel="noreferrer"><i style="font-size:24px"
+                                class="fa">&#xf0ac;</i></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="prof-profile">
+            <img src="./images//profile.png" alt="profile">
+        </div>
+    </div>
+    <section class="education-section" id="education" style="background: #282537;
+ background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%)">
+        <div class="education-container">
+            <h2 class="education-header"><i style="font-size:34px" class="fa">&#xf19d;</i> Education</h2>
+            <ul class="education-list">
+                <li class="education-card animate">
+                    <h3 class="institution">Datta Meghe College of Engineering CIDCO Sector III Airoli Navi Mumbai 400
+                        708
+                    </h3>
+                    <p class="degree">Bachelor of Engineering-BE, Information Technology</p>
+                    <p class="graduation-date">Feb 2020 - June 2024</p>
+                    <p class="grade">CGPA: 8.915/10</p>
+                </li>
+                <br>
+                <li class="education-card animate">
+                    <h3 class="institution">G.E.I.Z, M. H. High School and Junior College, Thane.</h3>
+                    <p class="degree">HSC</p>
+                    <p class="graduation-date">May 2020</p>
+                    <p class="grade">Percentage: 70.62%</p>
+                </li>
+                <br>
+                <li class="education-card animate">
+                    <h3 class="institution">Adarsh Vidyalaya Kurund</h3>
+                    <p class="degree">SSC</p>
+                    <p class="graduation-date">May 2018</p>
+                    <p class="grade">Percentage: 95.80%</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="skills-section" id="skill" style="background: #282537;
+     background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%)">
+        <div class="skills-container">
+            <div>
+                <h2 class="skills-header">
+                    Skills <br /><br />
+                    <p>Frontend</p>
+                </h2>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <h3 class="skill-title">HTML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">ReactJs</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">Tailwind CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">Svelte</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="skills-header">
+                    <p>Backend</p>
+                </h2>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <h3 class="skill-title">NodeJs</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">ExpressJs</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="skills-header">
+                    <p>Databases</p>
+                </h2>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <h3 class="skill-title">MongoDB</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">MySQL</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="skills-header">
+                    <p>Programming Languages</p>
+                </h2>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <h3 class="skill-title">Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <h3 class="skill-title">Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="experience-section" id="experience" style="background: #282537;
+ background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%)">
+        <div class="experience-container">
+            <h2 class="experience-header"><i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h2>
+            <ul class="experience-list">
+                <li class="experience-card animate">
+                    <div class="company-logo"><img src="./images/oasis_infobyte_logo.jpg" alt="Company 1 Logo"></div>
+                    <div>
+                        <h3 class="position">Web Development Intern</h3>
+                        <p class="company">Oasis Infobyte</p>
+                        <p class="employment-date">Dec 2023 - Present · 2 months</p>
+                        <ul class="responsibilities">
+                            <li class="responsibility-item">· HTML5 · React.js · Node.js</li>
+                            <li class="responsibility-item">· Express.js · MongoDB</li>
+                            <li class="responsibility-item">· JavaScript · Cascading Style Sheets (CSS)</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="experience-card animate">
+                    <div class="company-logo"><img src="./images/alhansat.jpg" alt="Company 1 Logo"></div>
+                    <div>
+                        <h3 class="position">Full Stack Web Developer Intern</h3>
+                        <p class="company">Alhansat Solutions</p>
+                        <p class="employment-date">Sep 2023 - Oct 2023 · 2 months</p>
+                        <ul class="responsibilities">
+                            <li class="responsibility-item">· Team Leadership</li>
+                            <li class="responsibility-item">· Software Development Life Cycle (SDLC)</li>
+                            <li class="responsibility-item">· Svelte · Full Stack Web Development</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="experience-card animate">
+                    <div class="company-logo"><img src="./images/devtown_in_logo.jpg" alt="Company 2 Logo"></div>
+                    <div>
+                        <h3 class="position">Full-stack Developer Intern</h3>
+                        <p class="company">DevTown</p>
+                        <p class="employment-date">Jun 2022 - Nov 2022 · 6 months</p>
+                        <ul class="responsibilities">
+                            <li class="responsibility-item">· SASS · Document Object Model (DOM) · Redux.js · Data
+                                Structures · Server
+                                Side · Schemas</li>
+                            <li class="responsibility-item">· JSON · API Development · REST APIs · C++ · Full-Stack
+                                Development ·
+                                React.js · Tailwind CSS</li>
+                            <li class="responsibility-item">· MongoDB · JavaScript · DevOps · Cascading Style Sheets
+                                (CSS) · HTML ·
+                                Node.js · Express.js</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="experience-card animate">
+                    <div class="company-logo"><img src="./images/twowaits_technologies_logo.jpg" alt="Company 3 Logo">
+                    </div>
+                    <div>
+                        <h3 class="position">Tathastu Python Scholar Intern</h3>
+                        <p class="company">TwoWaits</p>
+                        <p class="employment-date">June 2022 · 1 month</p>
+                        <ul class="responsibilities">
+                            <li class="responsibility-item">Python (Programming Language)</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section" id="project">
+        <div class="project-container">
+            <h2 class="project-header"><i class="fas fa-laptop-code"></i> Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3 class="project-title">Portfolio</h3>
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/db0txesgq/image/upload/v1701331867/Capture_x4dodj.jpg"
+                            alt="Project Image">
+                    </div>
+                    <p class="project-description">Portfolio made using ReactJs and Styled Component.</p>
+                    <div class="project-links">
+                        <a class="live-link" href="https://yasshharad.github.io/yash_harad_portfolio/"
+                            target="_blank">Live</a>
+                        <a class="github-link" href="https://github.com/Yasshharad/yash_harad_portfolio"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">YatraSahayak-Ai based Intinerary Planner</h3>
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/db0txesgq/image/upload/v1701331427/1_widwh0.jpg"
+                            alt="Project Image">
+                    </div>
+                    <p class="project-description">Travel Itinerary planner using MERN stack and Ai algorithms.</p>
+                    <div class="project-links">
+                        <a class="live-link" href="#" target="_blank">Live</a>
+                        <a class="github-link" href="https://github.com/Yasshharad/Yatra_Sahayak"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Sales Prediction For Grocery Store</h3>
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/dimfp6jdv/image/upload/v1694691208/saless_bgeysx.png"
+                            alt="Project Image">
+                    </div>
+                    <p class="project-description">Machine Learning Model using Linear Regression.</p>
+                    <div class="project-links">
+                        <a class="live-link" href="#" target="_blank">Live</a>
+                        <a class="github-link" href="https://github.com/Yasshharad/sales_prediction_grocery_store"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Book_my_show_clone</h3>
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/dimfp6jdv/image/upload/v1694692077/bookmyshow_ca2slg.jpg"
+                            alt="Project Image">
+                    </div>
+                    <p class="project-description">This project was done during Full Stack Internship. Frontend using
+                        ReactJs and Tailwind Css.</p>
+                    <div class="project-links">
+                        <a class="live-link" href="https://book-my-show-clone-liart-nu.vercel.app/"
+                            target="_blank">Live</a>
+                        <a class="github-link" href="https://github.com/Yasshharad/bookMyShow-clone"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Tasky</h3>
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/dimfp6jdv/image/upload/v1694692387/tasky_lifyjo.jpg"
+                            alt="Project Image">
+                    </div>
+                    <p class="project-description">This project was done during Full Stack Internship. Frontend
+                        application using HTML, CSS and JS where you can add task,
+                        delete, and update.</p>
+                    <div class="project-links">
+                        <a class="live-link" href="https://task-management-application-woad.vercel.app/"
+                            target="_blank">Live</a>
+                        <a class="github-link" href="https://github.com/Yasshharad/task_management_application"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">AgroGrocery- an online grocery store</h3>
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/dimfp6jdv/image/upload/v1694695730/grocery_lrlvna.jpg"
+                            alt="Project Image">
+                    </div>
+                    <p class="project-description">Academic project for web development. E commerce gorcery store made
+                        using ReactJs, NodeJs, expressJs mongoDB.</p>
+                    <div class="project-links">
+                        <a class="live-link" href="#" target="_blank">Live</a>
+                        <a class="github-link" href="https://github.com/Yasshharad/Agro_Grocery_New"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section" id="footer">
+        <div class="container-footer">
+            <div class="profile">
+                <div class="address">
+                    <h1>Address:</h1>
+                    <p>HNo-465, Balaji Nagar, Padgha, Bhiwandi, Thane, Maharashra- 421101</p>
+                </div>
+                <div class="links">
+                    <h1>Contact me directly:</h1>
+                    <div>
+                        <span>
+                            <FiPhoneCall />
+                        </span>
+                        <a href="tel:+91 8698124581">+91 8698124581</a>
+                    </div>
+                    <div>
+                        <span>
+                            <HiOutlineMailOpen />
+                        </span>
+                        <a href="mailto:haradyash0244@gmail.com" target="_blank"
+                            rel="noreferrer">haradyash0244@gmail.com</a>
+                    </div>
+                </div>
+                <div class="profiles">
+                    <h1>Check my profiles</h1>
+                    <div class="icons">
+                        <span><a href="https://www.linkedin.com/in/yash-harad-a60812227/" target="_blank"
+                                rel="noreferrer"><i style="font-size:24px" class="fa">&#xf08c;</i></a></span>
+                        <span><a href="https://github.com/Yasshharad" target="_blank" rel="noreferrer"><i
+                                    style="font-size:24px" class="fa">&#xf09b;</i></a></span>
+                        <span><a href="https://www.hackerrank.com/haradyash0244?hr_r=1" target="_blank"
+                                rel="noreferrer">HR</a></span>
+                        <span><a href="https://leetcode.com/Yash_Harad/" target="_blank" rel="noreferrer">LC</a></span>
+                    </div>
+                </div>
+                <div class="arrow-up">
+                    &#11165;
+                </div>
+            </div>
+            <div class="form">
+                <h1>Contact Me</h1>
+                <form>
+                    <div class="name">
+                        <span>
+                            <CgProfile />
+                        </span>
+                        <input type="text" placeholder="Fullname...">
+                    </div>
+                    <div class="email">
+                        <span>
+                            <MdAlternateEmail />
+                        </span>
+                        <input type="email" placeholder="Email...">
+                    </div>
+                    <div class="message">
+                        <span class="messageIcon">
+                            <FiMail />
+                        </span>
+                        <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+        <hr style="background-color: #fffb00;">
+        <h1 style="color: #fffb00; font-size: small; text-align: center; padding: 10px;"> &copy;
+            Yash_Harad_Portfolio-2024</h1>
+
+    </section>
+
+</body>
+
+</html>
