@@ -99,7 +99,7 @@ nav {
 }
 
 /* Media queries for responsive design */
-@media screen and (max-width: 768px) and (min-width: 412px) {
+@media screen and (max-width: 768px) and (min-width: 375px) {
     nav {
         display: flex;
     }
